@@ -11,6 +11,7 @@
             <th>Author</th>
             <th>Category</th>
             <th>Title</th>
+            <th>Tags</th>
             <th>Excerpt</th>
             <th>Body</th>
             <th>Created At</th>
@@ -28,6 +29,11 @@
                <td>{{ $post->user->name }}</td>
                <td>{{ $post->category ? $post->category->name : 'Uncategorized'}}</td>
                <td>{{ $post->title }}</td>
+               <td>
+                @foreach ($post->tags as $tag)
+                    <li>{{ $tag->name }}</li>
+                @endforeach
+               </td>
                <td>{{ $post->excerpt }}</td>
                <td>{{ str_limit($post->body, 25) }}</td>
                <td>{{ $post->created_at->diffForhumans() }}</td>
