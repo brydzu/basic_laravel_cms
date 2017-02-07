@@ -2,7 +2,9 @@
 
 @section('content')
 
+  @include('vendor.backpack.base.inc.tinymce'); 
    <h1>Create Post</h1>
+   
  <div>
     {!! Form::open(['method'=>'POST','action'=>'AdminControllers\PostsController@store', 'files'=>true]) !!}
          <div class="form-group">

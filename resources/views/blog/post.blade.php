@@ -13,7 +13,8 @@
       </header>
 
       <section class="post-content">
-         <p>{{ $post->body }}</p>
+        <img class="img-responsive" src="{{$post->image ? $post->image->file : null}}" alt="" />
+         <p>{!! $post->body !!}</p>
           <ul>
          @unless($post->tags->isEmpty())
          <h3>Tags: </h3>

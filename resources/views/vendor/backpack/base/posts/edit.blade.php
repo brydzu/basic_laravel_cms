@@ -2,6 +2,8 @@
 
 @section('content')
 
+  @include('vendor.backpack.base.inc.tinymce'); 
+
    <h1>Edit Post</h1>
 
  <div class="row">
