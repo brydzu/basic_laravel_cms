@@ -8,6 +8,8 @@ Includes Dashboard with ability to create, edit and delete posts, create, edit a
 
 Functionality to create Tags in admin will be coming soon. 
 
+Includes TinyMCE Editor and Laravel File Manager
+
 TODO: 
 
 - make it possible to publish with default category if none selected 'uncategorized'
@@ -15,6 +17,5 @@ TODO:
 - add sidebar (Providers?)
 - add tag cloud in sidebar. 
 - add list of categories in sidebar. 
-- add WYSIWYG editor in admin panel (see Edwin's additions to course)
 - possibly update Pretty URL to latest version. 
 - Add Disquis Comments (as per Edwin's tutorial)
